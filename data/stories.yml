@@ -1,0 +1,22 @@
+version: "3.1"
+
+stories:
+
+- story: order_pizza
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: buy_pizza
+  - action: simple_pizza_form
+  - active_loop: simple_pizza_form
+  - slot_was_set:
+    - requested_slot: pizza_size
+  - slot_was_set:
+    - requested_slot: pizza_type
+  - slot_was_set:
+    - requested_slot: delivery_phone_number
+  - slot_was_set:
+    - requested_slot: delivery_adress
+  - intent: goodbye
+  - action: utter_goodbye
+

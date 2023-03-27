@@ -1,0 +1,83 @@
+version: '3.1'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- buy_pizza
+- greet
+- inform
+- goodbye
+- affirm
+- stop
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- request_pizza_form
+entities:
+- pizza_size
+- pizza_type
+- delivery_phone_number
+- delivery_adress
+slots:
+  pizza_size:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: pizza_size
+  pizza_type:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: pizza_type
+  delivery_phone_number:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: delivery_phone_number
+  delivery_adress:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: delivery_adress
+forms:
+  simple_pizza_form:
+    required_slots:
+      - pizza_size
+      - pizza_type
+      - delivery_phone_number
+      - delivery_adress
+      
+responses:
+  utter_greet:
+  - text: Ahoj s čím vám pomôžem ?
+  utter_goodbye:
+  - text: Dovidenia
+  utter_iamabot:
+  - text: Ja som bot vytvorený pomocou RASA.
+  utter_submit:
+  - text: Všetko je v poriadku.
+  utter_pizza_slots:
+  - text: Objednávam pizzu {pizza_type} veľkosť {pizza_size} na adresu {delivery_adress}. Kurier vás bude kontaktovať na čísle {delivery_phone_number}
+  utter_ask_continue:
+  - text: Chcete pokračovať?
+  utter_ask_pizza_size:
+  - text: Akú veľkosť?
+  utter_ask_pizza_type:
+  - text: Aký druh pizze?
+  utter_ask_delivery_adress:
+  - text: Aká je vaša adresa?
+  utter_ask_delivery_phone_number:
+  - text: Aké je vaše telefónne číslo?
+actions:
+- utter_ask_continue
+- utter_goodbye
+- utter_greet
+- utter_pizza_slots
+- utter_submit
+- validate_simple_pizza_form
+

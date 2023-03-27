@@ -1,0 +1,70 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - Ahoj
+    - Cav
+    - Dobrý deň
+    - Dobrý večer 
+- intent: goodbye
+  examples: |
+    - dovi
+    - dovidenia
+    - cav
+    - čav
+    - ahoj
+- intent: affirm
+  examples: |
+    - áno
+    - jop
+    - jj
+- intent: deny
+  examples: |
+    - nie
+    - nn
+    - nope
+
+- intent: stop
+  examples: |
+    - stop
+    - tak nič
+
+- intent: bot_challenge
+  examples: |
+    - si bot?
+    - si človek?
+    - rozprávam sa s botom?
+- intent: buy_pizza
+  examples: |
+    - chcel by som pizzu
+    - chcel by som si objednať pizzu
+    - môžem si objednať pizzu ?
+- intent: inform
+  examples: |
+    - Chcel by som [large](pizza_size) pizzu
+    - Chcel by som [xl](pizza_size) [hawai](pizza_type) pizzu
+    - [stredna](pizza_size) pizza
+    - [velka](pizza_size)
+    - [mala](pizza_size)
+    - [malá](pizza_size)
+    - [pepperoni](pizza_type)
+    - prosim si [mozerella](pizza_type) pizzu
+    - [hawaii](pizza_type) pizza
+    - [stredná](pizza_size)
+    - [hawaii](pizza_type)
+    - prosim si [large](pizza_size) pizzu
+    - [mozzarella](pizza_type)
+    - [hawai](pizza_type)
+    - [veggie](pizza_type)
+    - [fungi](pizza_type)
+    - chcem [large](pizza_size) pizzu
+    - [vegggie](pizza_type)
+    - [veggie](pizza_type)
+    - [0917265992](delivery_phone_number)
+    - [+421966655564](delivery_phone_number)
+    - [0917964823](delivery_phone_number)
+    - [+421912345678](delivery_phone_number)
+    - [Hviezdna 4](delivery_adress)
+    - [Štúrova 25/6](delivery_adress)
+    - [Lesná 52](delivery_adress)
+    - [Na prehoni 369/12](delivery_adress)
