@@ -58,15 +58,23 @@ responses:
   utter_goodbye:
   - text: Dovidenia
   utter_iamabot:
-  - text: Ja som bot vytvorený pomocou RASA.
+  - text: Som bot vytvorený pomocou RASA.
   utter_submit:
   - text: Všetko je v poriadku.
   utter_pizza_slots:
-  - text: Objednávam pizzu {pizza_type} veľkosť {pizza_size} na adresu {delivery_adress}. Kurier vás bude kontaktovať na čísle {delivery_phone_number}
+  - text: Objednávam pizzu {pizza_type} veľkosť {pizza_size} na adresu {delivery_adress}. Kuriér vás bude kontaktovať na čísle {delivery_phone_number}
   utter_ask_continue:
   - text: Chcete pokračovať?
   utter_ask_pizza_size:
   - text: Akú veľkosť?
+    buttons:
+    - title: "Malá"
+      payload: '/inform{{"pizza_size":"malá"}}'
+    - title: "Stredná"
+      payload: '/inform{{"pizza_size":"stredná"}}'
+    - title: "Velká"
+      payload: '/inform{{"pizza_size":"velká"}}'
+
   utter_ask_pizza_type:
   - text: Aký druh pizze?
   utter_ask_delivery_adress:

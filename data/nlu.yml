@@ -36,6 +36,7 @@ nlu:
     - rozprávam sa s botom?
 - intent: buy_pizza
   examples: |
+    - chcem pizzu
     - chcel by som pizzu
     - chcel by som si objednať pizzu
     - môžem si objednať pizzu ?
@@ -53,13 +54,10 @@ nlu:
     - [stredná](pizza_size)
     - [hawaii](pizza_type)
     - prosim si [large](pizza_size) pizzu
-    - [mozzarella](pizza_type)
-    - [hawai](pizza_type)
-    - [veggie](pizza_type)
-    - [fungi](pizza_type)
+    - [salámová](pizza_type)
+    - [šunková](pizza_type)
+    - [syrová](pizza_type)
     - chcem [large](pizza_size) pizzu
-    - [vegggie](pizza_type)
-    - [veggie](pizza_type)
     - [0917265992](delivery_phone_number)
     - [+421966655564](delivery_phone_number)
     - [0917964823](delivery_phone_number)
