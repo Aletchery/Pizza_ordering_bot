@@ -1,6 +1,5 @@
-# Pizza_ordering_bot
+# Pizza bot
 
-### About
 Konverzačný bot vytvorený pomocoru RASA 3.1
 
 Bot na objednávanie pizze v slovenčine
