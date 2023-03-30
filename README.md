@@ -4,18 +4,18 @@ Konverzačný bot vytvorený pomocoru RASA 3.1
 
 Bot na objednávanie pizze v slovenčine
 
-### Príprava
+## Príprava
 ```
 pip3 install rasa 
 ```
 
-### Trénovanie bota
+## Trénovanie bota
 Tento krok môže trvať niekoľko desiatok sekúnd
 ```
 rasa train
 ```
 
-### Začiatok konverzácie
+## Začiatok konverzácie
 Treba otvoriť dva terminály v jednom spustiť:
 ```
 rasa run actions
@@ -26,7 +26,7 @@ rasa shell
 ```
 Tento krok bude trvať pár desiatok sekúnd 
 
-### Konverzácia
+# Konverzácia
 ## Začiatok
 Keď bude bot pripravený v terminály bude 
 ```
